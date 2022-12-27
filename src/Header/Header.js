@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import {FaTimes} from 'react-icons/fa'
 
 
 const Header = () => {
@@ -13,12 +14,24 @@ const Header = () => {
         </div>
         <div className='header-details'>
             <ul>
-                <li><a><Link to={'/'}>Home</Link></a></li>
-                <li><a><Link to={'/aboutUs'}>AboutUS</Link></a></li>
-                <li><a><Link to={'/contactUs'}>ContactUS</Link></a></li>
-                <li><a><Link to={'/community'}>Community</Link></a></li>
-                <li><a><Link to={'/news'}>News</Link></a></li>
+                <li><Link to={'/'}>Home</Link></li>
+                <li><Link to={'/aboutUs'}>AboutUS</Link></li>
+                <li><Link to={'/contactUs'}>ContactUS</Link></li>
+                <li><Link to={'/community'}>Community</Link></li>
+                <li><Link to={'/news'}>News</Link></li>
             </ul>
+        </div>
+
+        <div className="mobile-view">
+            <ul>
+                <li><Link to={'/'}>Home</Link></li>
+                <li><Link to={'/aboutUs'}>AboutUS</Link></li>
+                <li><Link to={'/contactUs'}>ContactUS</Link></li>
+                <li><Link to={'/community'}>Community</Link></li>
+                <li><Link to={'/news'}>News</Link></li>
+            </ul>
+
+            <button><FaTimes/></button>
         </div>
     </div>
   )
