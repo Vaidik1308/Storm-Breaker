@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=PT+Sans:wght@700&display=swap');
+
+*{
+  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'PT Sans', sans-serif; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style:none;
+  color: white;
+}
+html{
+  font-size: 16px;
+}
+body{
+  background-color: black;
+}
+.App{
+  display: flex;
+  flex-direction: column;
+  width: 100;
+}
+
+
+
+                                               /* Header Section */
+.Header-Container{
+  width: 100vw;
+  height: 15%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* border: white 1px solid; */
+  margin: 8px 0px;
+  flex-grow: 1;
+  padding: 6px;
+}
+
+.header-title{
+  font-size: 2rem;
+  text-align: left;
+  width: 33%;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.heading1{
+
+}
+.heading2{
+  color: #85F4FF;
+}
+
+.header-details{
+  display: flex;
+  width: 36%;
+
+}
+.header-details ul{
+  display: flex;
+  align-items:flex-end;
+}
+
+.header-details ul li{
+  padding: 2px 15px;
+  font-size: 1.3rem;
+}
+.header-details ul li a:hover{
+  color: #85F4FF;
+}
+
+/* ===== MAIN SECTION ===== */
+/* Home */
+
+.Home{
+  width: 80%;
+  height: 100vh;
+  flex-grow: 1;
+  margin: auto;
+  text-align: center;
+  font-size: 2.8rem;
+}
+/* AboutUS */
+.AboutUS{
+  width: 80%;
+  height: 100vh;
+  flex-grow: 1;
+  margin: auto;
+  text-align: center;
+  font-size: 2.8rem;
+
+}
+
+.about-content{
+  font-size: 1.2rem;
+}
+
+
+/* Community */
+.Community{
+  width: 80%;
+  height: 100vh;
+  flex-grow: 1;
+  margin: auto;
+  text-align: center;
+  font-size: 2.8rem;
+}
+/* ContactUS */
+.ContactUS{
+  width: 80%;
+  height: 100vh;
+  flex-grow: 1;
+  margin: auto;
+  text-align: center;
+  font-size: 2.8rem;
+}
+/* News */
+.News{
+  width: 80%;
+  height: 100vh;
+  flex-grow: 1;
+  margin: auto;
+  text-align: center;
+  font-size: 2.8rem;
+}
+
+/* Footer */
