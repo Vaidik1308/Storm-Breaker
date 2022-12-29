@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import {FaTimes} from 'react-icons/fa'
+import {FaTimes,FaBars} from 'react-icons/fa'
 
 
 const Header = () => {
@@ -20,6 +20,10 @@ const Header = () => {
                 <li><Link to={'/community'}>Community</Link></li>
                 <li><Link to={'/news'}>News</Link></li>
             </ul>
+        </div>
+
+        <div className="icon">
+            <FaBars/>
         </div>
 
         <div className="mobile-view">

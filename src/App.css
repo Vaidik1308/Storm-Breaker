@@ -14,12 +14,14 @@ html{
   font-size: 16px;
 }
 body{
+  overflow-y: auto;
+  overflow-x: hidden;
   background-color: black;
 }
 .App{
   display: flex;
   flex-direction: column;
-  width: 100;
+  width: 100vw;
 }
 
 
@@ -145,14 +147,84 @@ body{
 }
 
 /* Footer */
+hr{
+  opacity: 0.36;
+  color: lightgrey;
+  height: 4px;
+  background: lightgray;
+}
+.Footer-container{
+  width: 88%;
+  height: 35%;
+  margin: auto;
+}
 
 
+.footer-title{
+  font-size: 1.2rem;
+  margin-top: 12px;
+  padding: 8px 2px;
+  border-bottom: solid 3px #85F4FF;
+  width: 45%;
+  height: 23%;
+
+}
+
+.footer-info{
+  display: flex;
+  margin: 5px;
+  padding: 6px;
+  width: 50%;
+  height: 80%;
+}
+.footer-info ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  width: 100%;
+}
+
+.footer-info ul li{
+  margin: 4px 2px;
+  padding: 8px 1px;
+  font-size: 1.2rem;
+}
+
+.footer-info ul li a{
+
+}
+.footer-info ul li a span:hover{
+  color: #85F4FF;
+
+}
+
+.footer-info ul li a svg{
+  margin: -7px 13px;
+  font-size: 1.8rem;
+}
+
+.footer-info ul li a span{
+
+}
+
+.ul2{
+  height: 117% !important;
+}
+.ul2 li{
+  height: 39px;
+
+}
+.ul2 li a:hover{
+  color: #85F4FF;
+}
 
 
 @media screen and (max-width: 412px) {
 
   .App{
-    width: 80%;
+    width: 98%%;
   }
                                                  /* Header Section */
   .Header-Container{
@@ -184,20 +256,29 @@ body{
     display: none;
   }
 
+  .icon{
+
+  }
+
+  .icon svg{
+
+  }
+
   .mobile-view{
-    /* display: flex; */
-    display: none;
+    display: flex;
+    /* display: none; */
     /* justify-content: center; */
     /* align-items: center; */
-    width: 45%;
+    width: 43%;
     background: white;
     height: 88vh;
     z-index: 2;
     position: absolute;
     color: black;
     top: 10px;
-    right: 67px;
+    right: 34px;
     border-radius: 4px;
+    transform: translateX(250px);
 
   }
   .mobile-view button{

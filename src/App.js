@@ -23,6 +23,7 @@ function App() {
         <Route path='/news' element={<News/>}/>
         <Route path='/*' element={<Missing/>}/>
       </Routes>
+      <hr />
 
       {/* <Main/> */}
       <Footer/>
