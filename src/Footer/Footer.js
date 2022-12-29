@@ -21,10 +21,10 @@ const Footer = () => {
         
           <ul className='ul2'>
               <li><Link to={'/'}>Home</Link></li>
+              <li><Link to={'/news'}>Devices</Link></li>
               <li><Link to={'/aboutUs'}>AboutUS</Link></li>
               <li><Link to={'/contactUs'}>ContactUS</Link></li>
               <li><Link to={'/community'}>Community</Link></li>
-              <li><Link to={'/news'}>News</Link></li>
           </ul>
     
         </div>

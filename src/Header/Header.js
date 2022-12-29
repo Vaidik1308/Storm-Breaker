@@ -22,10 +22,10 @@ const Header = () => {
         <div className='header-details'>
             <ul>
                 <li><Link to={'/'}>Home</Link></li>
+                <li><Link to={'/news'}>Devices</Link></li>
                 <li><Link to={'/aboutUs'}>AboutUS</Link></li>
                 <li><Link to={'/contactUs'}>ContactUS</Link></li>
                 <li><Link to={'/community'}>Community</Link></li>
-                <li><Link to={'/news'}>News</Link></li>
             </ul>
         </div>
 
@@ -42,10 +42,10 @@ const Header = () => {
         <div style={view ? {transform: "translateX(0px)",transition:"transform 0.2s"} : {transform: "translateX(250px)",transition:"transform 0.2s"}} className="mobile-view">
             <ul>
                 <li><Link to={'/'}>Home</Link></li>
+                <li><Link to={'/news'}>Devices</Link></li>
                 <li><Link to={'/aboutUs'}>AboutUS</Link></li>
                 <li><Link to={'/contactUs'}>ContactUS</Link></li>
                 <li><Link to={'/community'}>Community</Link></li>
-                <li><Link to={'/news'}>News</Link></li>
             </ul>
 
             <button
