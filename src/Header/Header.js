@@ -1,9 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import {FaTimes,FaBars} from 'react-icons/fa'
+import {FaTimes,FaBars} from 'react-icons/fa';
+import { useState } from 'react';
 
 
 const Header = () => {
+    const [view,setView] = useState(false)
+    const sidebar = () => {
+        console.log("mobile_view");
+        setView(!view)
+        console.log(view);
+    }
   return (
     <div className='Header-Container'>
         <div className='header-title'>
@@ -23,10 +30,16 @@ const Header = () => {
         </div>
 
         <div className="icon">
-            <FaBars/>
+            <button 
+                style={view ? {display:"hidden"} : {display:"inline"}}
+                type='button' 
+                onClick={() => sidebar() }
+            >
+                <FaBars/>
+            </button>
         </div>
 
-        <div className="mobile-view">
+        <div style={view ? {transform: "translateX(0px)",transition:"transform 0.2s"} : {transform: "translateX(250px)",transition:"transform 0.2s"}} className="mobile-view">
             <ul>
                 <li><Link to={'/'}>Home</Link></li>
                 <li><Link to={'/aboutUs'}>AboutUS</Link></li>
@@ -35,7 +48,9 @@ const Header = () => {
                 <li><Link to={'/news'}>News</Link></li>
             </ul>
 
-            <button><FaTimes/></button>
+            <button
+                style={!view ? {display:"none"} : {display:"inline"}}
+                type='button' onClick={() => {sidebar()}}><FaTimes/></button>
         </div>
     </div>
   )
